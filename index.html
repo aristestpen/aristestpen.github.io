@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Profile</title>
     <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
 </head>
 
 <body>
     <header>
         <a href="#" class="logo">Testpen Coding</a>
         <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#skill" onclick="toggleMenu();">Skill</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-        </ul>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#skill" onclick="toggleMenu();">Skill</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="banner" id="home">
@@ -33,7 +37,7 @@
                 <article>
                     <div class="heading">
                         <h2>Skill</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p></p>
                     </div>
                     <div class="content">
                         <div class="card-img">
@@ -81,28 +85,37 @@
                         <br />
                     </article>
                 </div>
-                <aside>
-                    <div class="card-img">
-                        <div class="w50">
-                            <img src="assets/image/profil.png" class="img" />
-                        </div>
-                        <p>Nama : Aris Heryana</p>
-                        <p>TTL : Cilacap, 29 Mei 2001</p>
-                        <p>Alamat : Dusun Kedungreja, Desa Gandrungmangu, Kecamatan Gandrungmangu</p>
-                        <p>Email : aristestpen03@gmail.com</p>
-                        <p>No Telepon : 083863613527</p>
-                    </div>
-                </aside>
             </div>
         </section>
-        <footer>
-            <div class="footer">
-                <p>Copyright &#169; 2020, Testpen Coding</p>
-            </div>
-        </footer>
-
+        <aside>
+            <article class="cardPhoto">
+                <div class="card-img">
+                    <div class="content w50">
+                        <img src="assets/image/profil.png" class="img" />
+                    </div>
+                    <div onclick="moreaboutme()" title="Klik Untuk Buka" class="btn">More About Me</div>
+                    <div id="penulis">
+                        Nama : Aris Heryana <br>
+                        TTL : Cilacap, 29 Mei 2001 <br>
+                        Alamat : Dusun Kedungreja, Desa Gandrungmangu, Kecamatan Gandrungmangu <br>
+                        No Telepon : 083863613527 <br>
+                        Email : aristestpen03@gmail.com
+                    </div>
+            </article>
+        </aside>
         <script src="assets/index.js"></script>
     </main>
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="https:www.facebook.com/profile.php?id=100004610929188" target="_blank"><i class="fab fa-facebook"></i>  </a>
+                <a href="https:www.instagram.com/aristestpen/?hl=id" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
+                <a href="https:github.com/arisheryana03" target="_blank"><i class="fab fa-github" aria-hidden="true"></i>  </a>
+                <a href="https:www.linkedin.com/in/aris-heryana-ba6429197/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i>  </a>
+            </div>
+            <p>Copyright &#169; 2020, Testpen Coding</p>
+        </div>
+    </footer>
 </body>
 
 </html>

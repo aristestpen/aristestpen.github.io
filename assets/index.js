@@ -9,3 +9,12 @@ function toggleMenu () {
     menuToggle.classList.toggle('active');
     menu.classList.toggle('active');
 }
+
+function moreaboutme() {
+    var x = document.getElementById("penulis");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

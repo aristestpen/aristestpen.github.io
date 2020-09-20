@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -55,6 +56,21 @@ section {
     font-weight: 500;
 }
 
+.btn {
+    width: 140px ;
+    background-color: #FDA50F;
+    font-size: 17px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: 2px solid #131418;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: azure;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -76,10 +92,10 @@ header.nav {
 
 header .logo {
     color: #fff;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: bold;
     letter-spacing: 2px;
 }
 
@@ -102,7 +118,9 @@ header ul li a {
     display: inline-block;
     margin: 0 15px;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;;
+    font-size: 20px;
+
 }
 
 header.nav ul li a {
@@ -122,15 +140,23 @@ header.nav ul li a {
 }
 
 
+.cardPhoto {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 3px;
+    justify-content: center;
+}
+
 .card {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    position: sticky;
+    justify-content: left;
 }
-
 .card-content {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     border-radius: 5px;
@@ -157,8 +183,23 @@ img {
     object-fit: contain;
     min-width: 100%;
 }
+#penulis {
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid black;
+}
 
 .card-img {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-imgPhoto {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     padding: 20px;
@@ -175,11 +216,35 @@ img {
     object-fit: cover
 }
 
-.footer {
+.social{
+    height: 30px    ;
+}
+
+.social a{
+    color: black;
+    font-size: 20px;
+    margin:0 15px;
+    transition: all ease 0.3s;
+    text-decoration: none;
+}
+
+
+.social a:hover{
+    transition: all ease 0.3s;
+    opacity: 0.5;
+}
+
+footer {
     background: #FD6A02;
-    color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 25px 0;
+    margin-top: 3px;
+}
+
+footer p {
+    line-height: 20px;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 /*Responsive*/
@@ -221,7 +286,7 @@ img {
     .toggle {
         width: 40px;
         height: 40px;
-        background: url(img/menu.png);
+        background: url(../image/menu.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
@@ -230,7 +295,7 @@ img {
 
 
     .toggle.active {
-        background: url(img/close.png);
+        background: url(../image/close.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 25px;
